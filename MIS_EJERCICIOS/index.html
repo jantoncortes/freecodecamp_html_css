@@ -2,14 +2,25 @@
 <html lang="es">
   <head>
     <title>AppDeGatos</title>
-    <style>
-      <h2 {
+    <link href="style.css" reL="stylesheet">
+    <!--LINK A GOOGLE FONTS ROBOTO y Dancing Script-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <style>
+      h2 {
         background-color:red;
+        color:blue;
       }
-    </style>
+      
+      p{
+        color:rgb(79, 14, 189);
+      }
+    </style> -->
   </head>
   <body>
-    <h2>AppDeGatos</h2>
+    <h2 id="titulo-principal">AppDeGatos</h2>
+    <h2>AppDeGatos2</h2>
     <main>    
       <h3>imágenes de gatos</h3>
       <!--TODO: Agregar enlace a imágenes de gatos-->
@@ -40,24 +51,26 @@
     
     <div>
       <p>Cosas que los gastos <em>aman</em>: </p>
-          <ul>
+      <!--le asignamos class para dar estilos en css-->
+          <ul class="lista-de-gatos">
             <li>Menta gatuna</li>
             <li>Apuntadores láser</li>
             <li><s>Lasaña</s></li>
           </ul>
-          <img src="imagenes/lasana.jpg" alt="imagen de lasaña"> 
+          <img id="lasana" src="imagenes/lasana.jpg" class="bordes-redondeados" alt="imagen de lasaña"> 
 
       <p>Cosas que los gatos <strong>odian</strong>:</p>
-          <ol>
+          <ol class="lista-de-gatos">
             <li>Tratamientos antipulgas</li>
             <li>Truenos</li>
             <li>Otros gatos</li>
           </ol>
+      <img src="imagenes/gato.jpg" alt="gato-retando">
     </div>
-        <img src="imagenes/gato.jpg">
+     
       
     <form action="/enviar-respuesta">
-
+      <!--botones de radio-->
       <label for="interior"><input id="interior" type="radio" value="interior" name="interior-exterior" checked>Interior</label> <!--label hace que podamos marcar clicando el texto. Name permite crear un grupo, para poder seleccionar uno u otro, para los checkbox no afecta-->
       <label for="exterior"><input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior</label> <br>
      
